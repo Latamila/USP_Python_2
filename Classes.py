@@ -158,3 +158,59 @@ lista.append(b)
 print('lista =',lista,'\n')
 print('a = ',a,'\n')
 print('b = ',b,'\n')
+########################################
+
+#DESAFIO SEMANA 3
+
+class Triangulo:
+    def __init__(self,a,b,c):
+        self.a = a
+        self.b = b
+        self.c = c
+        
+    def perimetro(self):
+        return self.a + self.b + self.c
+    
+    def tipo_lado(self):
+        if self.a != self.b and self.c != self.b and self.a != self.c:
+            return 'escaleno'
+        elif self.a == self.b and self.b == self.c:
+            return 'equilátero'
+        else:
+            return 'isósceles'
+        
+    def retangulo(self): #desafio opcional 
+        if (self.a **2 + self.b**2) == self.c**2:
+            return True
+        else:
+            return False
+            
+    
+t = Triangulo(1,2,3)
+
+print(t.a)
+print(t.b)
+print(t.c)
+print(t.perimetro())
+print(t.tipo_lado())
+
+t = Triangulo(4, 4, 4)
+print(t.tipo_lado())
+# deve devolver 'equilátero'
+
+u = Triangulo(3, 4, 5)
+print(u.tipo_lado())
+# deve devolver 'escaleno'
+
+########################################################
+#DESAFIOS OPCIONAIS
+t = Triangulo(1,3,5)
+print(t.retangulo())
+
+u = Triangulo(3,4,5)
+print(u.retangulo())
+
+
+
+
+#####################################################
