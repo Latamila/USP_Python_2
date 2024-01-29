@@ -113,4 +113,48 @@ main()
 carro_vovo = Carro('ranger', 2000, 'preto')
 print(carro_vovo.cor)
 
-#projeto 2
+#########################################################
+#projeto 2 class Carro
+
+
+
+
+######################################################
+class Cafeteira:
+    def __init__(self, marca, tipo, tamanho, cor):
+        self.marca = marca
+        self.tipo = tipo
+        self.cor = cor
+        self.tamano = tamanho
+        
+#o parametro self é o proprio objeto a ser criado
+
+class Cachorro:
+    def __init__(self, raça, idade, nome, cor):
+        self.raça = raça
+        self.idade = idade
+        self.nome = nome
+        self.cor = cor
+        
+rex = Cachorro('vira-lata',2,'Bob','marrom')
+print(rex.raça)
+print(rex.nome)
+print(rex.cor)
+print(rex.idade)
+print(rex.idade>2)
+
+#######################################
+class Lista:
+    def append(self, elemento):
+        return 'OOps! Este objeto não é uma lista.'
+    
+lista = []
+
+a = Lista()
+b = a.append(7)
+ 
+lista.append(b)
+
+print('lista =',lista,'\n')
+print('a = ',a,'\n')
+print('b = ',b,'\n')
