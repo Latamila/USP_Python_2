@@ -225,3 +225,23 @@ def elefantes(n):
 # Testando a função elefantes para n = 4
 print(elefantes(4))
 
+'''
+FIBONACCI RECURSIVO
+'''
+def fibonacci(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+
+'''
+FATORIAL RECURSIVO 
+'''
+
+def fatorial(x):
+    if x == 0:
+        return 1
+    else:
+        return x * fatorial(x-1)
